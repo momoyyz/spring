@@ -8,6 +8,16 @@ public class ChangBll {
 	public ChangLower getChang() {
 		return chang;
 	}
+	
+	public ChangBll(ChangLower chang) {
+		super();
+		this.chang = chang;
+	}
+
+	public ChangBll() {
+		super();
+	}
+
 
 	public void setChang(ChangLower chang) {
 		this.chang = chang;

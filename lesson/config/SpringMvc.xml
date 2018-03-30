@@ -12,7 +12,11 @@
 <bean id="Lower" class="com.yyz.imp.ChangLower" >
 	<property  name="str" value="Yang En"></property>
 </bean>
-<bean id="changBll" class="com.yyz.in.ChangBll">
+<bean id="changBll" class="com.yyz.in.ChangBll" scope="prototype">
 	<property name="chang" ref="Lower"></property>
+</bean>
+
+<bean id="changBllarg" class="com.yyz.in.ChangBll" scope="prototype">
+	<constructor-arg name="chang" ref="Lower"></constructor-arg>
 </bean>
 </beans>
